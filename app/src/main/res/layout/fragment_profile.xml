@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/background_design_login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_textview_3"
+        android:fontFamily="@font/basic"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Profile Information"
+        android:textColor="@color/mywhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/mEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:layout_margin="5dp"
+            android:fontFamily="@font/basic"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/mNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/basic"
+            android:hint="New Password"
+            android:textColorHint="#FFFFFF"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            app:backgroundTint='#a9adb0' />
+
+        <EditText
+            android:id="@+id/mConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/basic"
+            android:hint="Confirm New Password"
+            android:textColorHint="#FFFFFF"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            app:backgroundTint='#a9adb0' />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/basic"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/mywhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/myblue" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/basic"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/mywhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/mygreen" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/basic"
+        android:text="Delete Account"
+        android:textAllCaps="false"
+        android:textColor="@color/mywhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF5722" />
+
+
+</LinearLayout>

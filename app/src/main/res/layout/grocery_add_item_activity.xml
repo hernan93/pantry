@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/background_newpantryitem">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_design_login"
+        android:fontFamily="@font/baskervville_italic"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add a new ingredient!"
+        android:textColor="@color/mywhite"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/basic"
+            android:hint="Ingredient"
+            android:minHeight="48dp"
+            android:textColor="@color/myblack"
+            android:textColorHint="@color/mygrey"
+            android:textSize="16dp"
+            app:backgroundTint='#a9adb0' />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/CancelBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/bebaneue"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/mywhite"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/myblack" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/bebaneue"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/mywhite"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/orange" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
