@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="casual"
-        android:text="MyPantry"
+        android:text="Proyecto"
         android:textAlignment="center"
         android:textColor="@color/mywhite"
         android:textSize="27sp"

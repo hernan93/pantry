@@ -18,13 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
-        replaceFragment(RecipesMainFragment())
+        replaceFragment(GroceryMainFragment())
         binding!!.bottomNavigationView.setOnItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
                 R.id.Grocery_List -> replaceFragment(GroceryMainFragment())
                 R.id.Pantry -> replaceFragment(PantryMainFragment())
                 R.id.Profile -> replaceFragment(ProfileFragment())
-                R.id.Recipes -> replaceFragment(RecipesMainFragment())
+               // R.id.Recipes -> replaceFragment(RecipesMainFragment())
             }
             true
         }

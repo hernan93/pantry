@@ -60,6 +60,19 @@
             android:textSize="16dp"
             app:backgroundTint='#a9adb0' />
 
+        <EditText
+            android:id="@+id/Group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/basic"
+            android:hint="Grupo"
+            android:textColorHint="#FFFFFF"
+            android:minHeight="48dp"
+            android:textSize="16dp"
+            app:backgroundTint='#a9adb0' />
+
+
 
     </LinearLayout>
 

@@ -11,7 +11,7 @@
 
     <androidx.cardview.widget.CardView
         app:cardElevation="8dp"
-        app:cardBackgroundColor="@color/orange"
+        app:cardBackgroundColor="@color/mygrey"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">

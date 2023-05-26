@@ -93,7 +93,7 @@
                 android:fontFamily="@font/basic"
                 android:maxLines="3"
                 android:padding="5dp"
-                android:text="Details"
+                android:text="Quantity"
                 android:textColor="#71757a"
                 android:textSize="15sp" />
         </LinearLayout>

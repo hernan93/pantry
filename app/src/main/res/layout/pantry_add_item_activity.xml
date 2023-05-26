@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/basic"
-            android:hint="Details (optional)"
+            android:hint="quantity (optional)"
             android:textColorHint="@color/mygrey"
             android:minHeight="48dp"
             android:textColor="@color/myblack"

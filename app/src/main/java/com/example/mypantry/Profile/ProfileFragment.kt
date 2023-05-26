@@ -74,6 +74,7 @@ import com.example.mypantry.Models.RecipeDetailsResponse
 import android.os.Parcelable
 import android.os.Parcel
 import android.os.Parcelable.Creator
+import android.util.Log
 import android.view.View
 import com.example.mypantry.GroceryList.GroceryItem
 import android.view.View.OnLongClickListener
@@ -92,12 +93,17 @@ import androidx.fragment.app.Fragment
 import com.example.mypantry.splash_activity
 import com.example.mypantry.Adapters.IngredientsAdapter
 import com.example.mypantry.Adapters.InstructionsAdapter
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class ProfileFragment : Fragment() {
     private var mAuth: FirebaseAuth? = null
     private var mUser: FirebaseUser? = null
     private var onlineUserID: String? = null
     private var loader: ProgressDialog? = null
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -110,9 +116,36 @@ class ProfileFragment : Fragment() {
         loader = ProgressDialog(activity)
         mUser = mAuth!!.currentUser
         onlineUserID = mUser!!.uid
+
         val changeEmail = view.findViewById<TextView>(R.id.mEmail)
         val changePass = view.findViewById<EditText>(R.id.mNewPass)
         val confirmPass = view.findViewById<EditText>(R.id.mConfirmPass)
+        val changeGroup = view.findViewById<EditText>(R.id.Group)
+
+        val databaseRef = FirebaseDatabase.getInstance()
+        val usersRef = databaseRef.getReference("users")
+        usersRef.child(onlineUserID!!).child("groupId")
+            .addListenerForSingleValueEvent(object : ValueEventListener{
+
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val groupId = snapshot.value as String?
+                    if (groupId != null) {
+                        // Aquí tienes el GroupID del usuario actual
+                        // Puedes realizar las operaciones necesarias con él
+                        Log.d("grupo", "${groupId}")
+                        changeGroup.setText("$groupId")
+
+                    }
+
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    println("Error al obtener el GroupID del usuario actual: ${error.message}")
+
+                }
+
+            })
+
         changeEmail.text = "Email: " + mUser!!.email
         changePass.setText("")
         confirmPass.setText("")

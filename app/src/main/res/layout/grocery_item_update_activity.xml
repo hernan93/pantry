@@ -55,14 +55,17 @@
                 android:id="@+id/btnDelete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="Delete"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/basic"
-                app:backgroundTint="#ba6056"
-                android:layout_margin="10dp"
-                android:textStyle="bold"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/mywhite"
                 android:textSize="16sp"
-                android:textColor="@color/mywhite"/>
+                android:textStyle="bold"
+                app:backgroundTint="#ba6056" />
 
         </RelativeLayout>
 

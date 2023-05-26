@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyPantry</string>
+    <string name="app_name">TFM</string>
     <string name="api_key">4aca535c612947818187d0b75746e965</string>
 
     <string name="welcome_to_mypantry">Welcome to MyPantry!</string>
@@ -15,7 +15,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_registration">registration_activity</string>
-    <!-- Strings used for fragments for navigation -->
+
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
