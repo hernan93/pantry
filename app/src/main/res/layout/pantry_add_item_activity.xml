@@ -5,18 +5,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="15dp"
-    android:background="@drawable/background_newpantryitem">
+    android:background="@drawable/background_design_grocery">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@drawable/background_textview_2"
+        android:background="@drawable/background_design_grocery"
         android:fontFamily="@font/basic"
         android:gravity="center"
         android:padding="10dp"
         android:text="Add a new pantry item"
-        android:textColor="@color/mywhite"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -33,11 +33,11 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/basic"
             android:hint="Item"
-            android:textColorHint="@color/mygrey"
+            android:textColorHint="@color/bwhite"
             android:minHeight="48dp"
             android:textColor="@color/myblack"
             android:textSize="16dp"
-            app:backgroundTint='#a9adb0' />
+            app:backgroundTint='@color/bwhite' />
 
         <EditText
             android:id="@+id/description"
@@ -46,11 +46,11 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/basic"
             android:hint="quantity (optional)"
-            android:textColorHint="@color/mygrey"
+            android:textColorHint="@color/bwhite"
             android:minHeight="48dp"
             android:textColor="@color/myblack"
             android:textSize="16dp"
-            app:backgroundTint='#a9adb0' />
+            app:backgroundTint='@color/bwhite' />
 
         <EditText
             android:id="@+id/date"
@@ -59,11 +59,11 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/basic"
             android:hint="Expiration Date (optional)"
-            android:textColorHint="@color/mygrey"
+            android:textColorHint="@color/bwhite"
             android:minHeight="48dp"
             android:textColor="@color/myblack"
             android:textSize="16dp"
-            app:backgroundTint='#a9adb0' />
+            app:backgroundTint='@color/bwhite' />
 
 
     </LinearLayout>
@@ -82,14 +82,17 @@
                 android:id="@+id/CancelBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="Cancel"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/basic"
-                app:backgroundTint="@color/myblue"
-                android:layout_margin="10dp"
-                android:textStyle="bold"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/mywhite"
                 android:textSize="16sp"
-                android:textColor="@color/mywhite"/>
+                android:textStyle="bold"
+                app:backgroundTint="#ba6056" />
 
         </RelativeLayout>
 

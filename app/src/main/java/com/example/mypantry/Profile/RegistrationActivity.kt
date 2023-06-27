@@ -116,7 +116,7 @@ class RegistrationActivity() : AppCompatActivity() {
         RegPwd = findViewById(R.id.RegistrationPassword)
         RegBtn = findViewById(R.id.RegistrationButton)
         RegQn = findViewById(R.id.RegistrationPageQuestion)
-        GroupId = findViewById(R.id.GroupId)
+//        GroupId = findViewById(R.id.GroupId)
         RegQn?.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@RegistrationActivity, LoginActivity::class.java)
             startActivity(intent)
@@ -125,15 +125,15 @@ class RegistrationActivity() : AppCompatActivity() {
             override fun onClick(view: View) {
                 val email = RegEmail?.getText().toString().trim { it <= ' ' }
                 val password = RegPwd?.getText().toString().trim { it <= ' ' }
-                val Groupid = GroupId?.getText().toString().trim { it <= ' ' }
+//                val Groupid = GroupId?.getText().toString().trim { it <= ' ' }
                 if (TextUtils.isEmpty(email)) {
                     RegEmail?.setError("A valid email is required")
                     return
                 }
-                if (TextUtils.isEmpty(Groupid)) {
-                    GroupId?.setError("A valid Group is required")
-                    return
-                }
+//                if (TextUtils.isEmpty(Groupid)) {
+//                    GroupId?.setError("A valid Group is required")
+//                    return
+//                }
                 if (TextUtils.isEmpty(password)) {
                     RegPwd?.setError("A valid password is required")
                     return
@@ -154,14 +154,14 @@ class RegistrationActivity() : AppCompatActivity() {
                                 val email =
                                     currentUser!!.email // Correo electrónico del usuario actual
                                 val userId = currentUser.uid // ID de usuario del usuario actual
-                                val groupId = Groupid // ID del grupo obtenido del EditText
+//                                val groupId = Groupid // ID del grupo obtenido del EditText
 
                                 // Crear un nuevo nodo para el usuario actual
                                 val userRef = usersRef.child(userId)
 
                                 // Guardar los datos del usuario actual en el nodo correspondiente
                                 userRef.child("email").setValue(email)
-                                userRef.child("groupId").setValue(groupId)
+//                                userRef.child("groupId").setValue(groupId)
                                 val intent =
                                     Intent(this@RegistrationActivity, MainActivity::class.java)
                                 startActivity(intent)

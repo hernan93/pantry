@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@drawable/background_textview_3"
+        android:background="@drawable/background_design_login"
         android:fontFamily="@font/basic"
         android:gravity="center"
         android:padding="10dp"
         android:text="Profile Information"
-        android:textColor="@color/mywhite"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -60,17 +60,17 @@
             android:textSize="16dp"
             app:backgroundTint='#a9adb0' />
 
-        <EditText
-            android:id="@+id/Group"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="@font/basic"
-            android:hint="Grupo"
-            android:textColorHint="#FFFFFF"
-            android:minHeight="48dp"
-            android:textSize="16dp"
-            app:backgroundTint='#a9adb0' />
+<!--        <EditText-->
+<!--            android:id="@+id/Group"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:fontFamily="@font/basic"-->
+<!--            android:hint="Grupo"-->
+<!--            android:textColorHint="#FFFFFF"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:textSize="16dp"-->
+<!--            app:backgroundTint='#a9adb0' />-->
 
 
 
@@ -99,7 +99,7 @@
                 android:textColor="@color/mywhite"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:backgroundTint="@color/myblue" />
+                app:backgroundTint="#FD8980" />
 
         </RelativeLayout>
 
@@ -123,7 +123,7 @@
                 android:textColor="@color/mywhite"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:backgroundTint="@color/mygreen" />
+                app:backgroundTint="@color/ic_launcher_background" />
 
         </RelativeLayout>
 
@@ -132,7 +132,7 @@
     <RelativeLayout
         android:layout_width="382dp"
         android:layout_height="wrap_content"
-        android:layout_weight="2"/>
+        android:layout_weight="2" />
 
     <Button
         android:id="@+id/btnDeleteAccount"
@@ -148,7 +148,7 @@
         android:textColor="@color/mywhite"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="#FF5722" />
+        app:backgroundTint="#F84C15" />
 
 
 </LinearLayout>

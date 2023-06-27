@@ -120,31 +120,32 @@ class ProfileFragment : Fragment() {
         val changeEmail = view.findViewById<TextView>(R.id.mEmail)
         val changePass = view.findViewById<EditText>(R.id.mNewPass)
         val confirmPass = view.findViewById<EditText>(R.id.mConfirmPass)
-        val changeGroup = view.findViewById<EditText>(R.id.Group)
+//        val changeGroup = view.findViewById<EditText>(R.id.Group)
 
         val databaseRef = FirebaseDatabase.getInstance()
         val usersRef = databaseRef.getReference("users")
-        usersRef.child(onlineUserID!!).child("groupId")
-            .addListenerForSingleValueEvent(object : ValueEventListener{
-
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    val groupId = snapshot.value as String?
-                    if (groupId != null) {
-                        // Aquí tienes el GroupID del usuario actual
-                        // Puedes realizar las operaciones necesarias con él
-                        Log.d("grupo", "${groupId}")
-                        changeGroup.setText("$groupId")
-
-                    }
-
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    println("Error al obtener el GroupID del usuario actual: ${error.message}")
-
-                }
-
-            })
+//        usersRef.child(onlineUserID!!).child("groupId")
+//
+//            .addListenerForSingleValueEvent(object : ValueEventListener{
+//
+//                override fun onDataChange(snapshot: DataSnapshot) {
+//                    val groupId = snapshot.value as String?
+//                    if (groupId != null) {
+//                        // Aquí tienes el GroupID del usuario actual
+//                        // Puedes realizar las operaciones necesarias con él
+//                      Log.d("grupo", "${groupId}")
+//                        changeGroup.setText("$groupId")
+//
+//                    }
+//
+//                }
+//
+//                override fun onCancelled(error: DatabaseError) {
+////                    println("Error al obtener el GroupID del usuario actual: ${error.message}")
+//
+//                }
+//
+//            })
 
         changeEmail.text = "Email: " + mUser!!.email
         changePass.setText("")

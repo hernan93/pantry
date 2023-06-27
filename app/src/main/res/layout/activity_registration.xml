@@ -58,20 +58,20 @@
         android:padding="10dp"
         android:textColor="@color/mywhite" />
 
-    <EditText
-        android:id="@+id/GroupId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/inputs"
-        android:drawableLeft="@drawable/inputs"
-        android:drawablePadding="10dp"
-        android:fontFamily="@font/basic"
-        android:hint="Enter Group"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:textColor="@color/mywhite" />
+<!--    <EditText-->
+<!--        android:id="@+id/GroupId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@drawable/inputs"-->
+<!--        android:drawableLeft="@drawable/inputs"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:fontFamily="@font/basic"-->
+<!--        android:hint="Enter Group"-->
+<!--        android:inputType="text"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/mywhite" />-->
 
     <Button
         android:id="@+id/RegistrationButton"
@@ -80,8 +80,8 @@
         android:text="Register"
         android:textAllCaps="false"
         android:layout_margin="10dp"
-        android:textColor="#000"
-        app:backgroundTint="@color/mywhite"
+        android:textColor="@color/bwhite"
+        app:backgroundTint="@color/ic_launcher_background"
         android:fontFamily="@font/basic"
         android:textSize="17sp"/>
     <TextView
@@ -89,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Already have an account? Login"
-        android:textColor="@color/mywhite"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:gravity="center"
