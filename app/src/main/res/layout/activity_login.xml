@@ -72,6 +72,17 @@
         app:backgroundTint="@color/ic_launcher_background" />
 
     <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do not you remember your password? "
+        android:textColor="@color/myblack"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/basic"/>
+
+    <TextView
         android:id="@+id/loginPageQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

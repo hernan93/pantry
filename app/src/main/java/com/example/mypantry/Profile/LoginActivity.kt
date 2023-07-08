@@ -96,6 +96,7 @@ class LoginActivity : AppCompatActivity() {
     private var loginPwd: EditText? = null
     private var loginBtn: Button? = null
     private var loginQn: TextView? = null
+    private var forgetPass: TextView? = null
     private var mAuth: FirebaseAuth? = null
     private var loader: ProgressDialog? = null
     private var authStateListener: AuthStateListener? = null
@@ -122,8 +123,13 @@ class LoginActivity : AppCompatActivity() {
         loginPwd = findViewById(R.id.loginPassword)
         loginBtn = findViewById(R.id.loginButton)
         loginQn = findViewById(R.id.loginPageQuestion)
+        forgetPass = findViewById(R.id.forgetPassword)
         loginQn?.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@LoginActivity, RegistrationActivity::class.java)
+            startActivity(intent)
+        })
+        forgetPass?.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@LoginActivity, ForgetPassword::class.java)
             startActivity(intent)
         })
         loginBtn?.setOnClickListener(View.OnClickListener {

@@ -14,12 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPantry"
         tools:targetApi="31">
+        <activity
+            android:name=".Profile.ForgetPassword"
+            android:exported="false" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Profile.LoginActivity" />
         <activity android:name=".Profile.RegistrationActivity" />
         <activity android:name=".Pantry.PantryMainFragment" />
-        <activity android:name=".GroceryList.GroceryMainFragment"/>
-        <activity android:name=".Profile.ProfileFragment"/>
+        <activity android:name=".GroceryList.GroceryMainFragment" />
+        <activity android:name=".Profile.ProfileFragment" />
         <activity
             android:name=".splash_activity"
             android:exported="true">
